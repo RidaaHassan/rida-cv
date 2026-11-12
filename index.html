@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rida Hassan | BSCS Student</title>
+<meta name="description" content="Rida Hassan, BSCS student at Qarshi University, available for tech roles and collaboration.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cur" id="cur"></div><div class="ring" id="ring"></div>
+<div class="bar" id="bar"></div>
+<button class="theme" id="theme" aria-label="Switch light or dark theme">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 3a9 9 0 1 0 9 9c0-.5-.1-1-.2-1.5A6 6 0 0 1 13.5 3.2 9 9 0 0 0 12 3z"/></svg>
+</button>
+
+<!-- Pinned stage: intro, laptop scene, phone scene -->
+<section id="story">
+  <div class="stage" id="stage">
+    <div class="orb o1"></div><div class="orb o2"></div>
+
+    <div class="hero" id="hero">
+      <div class="portrait" id="portrait">
+        <svg viewBox="0 0 200 200" role="img" aria-label="Avatar of Rida"><circle cx="100" cy="78" r="34"/><path d="M32 200c0-46 30-70 68-70s68 24 68 70z"/></svg>
+        <img src="./rida.jpg" alt="Portrait of Rida Hassan" onerror="this.remove()">
+      </div>
+      <h1 id="name" aria-label="Rida Hassan">Rida Hassan</h1>
+      <p class="role">BSCS student at Qarshi University, Lahore</p>
+      <p class="status"><i></i>Available for tech roles and collaboration</p>
+      <p class="hint">Scroll to explore</p>
+    </div>
+
+    <div class="rig" id="laptop">
+      <div class="lid">
+        <div class="screen">
+          <div class="ph">Add ./images/perfume-desktop.webp</div>
+          <img src="./images/perfume-desktop.webp" alt="Perfume website on a desktop screen" onerror="this.previousElementSibling.textContent='Cannot load '+this.src;this.remove()">
+        </div>
+      </div>
+      <div class="base"></div>
+    </div>
+
+    <div class="rig" id="phone">
+      <div class="body">
+        <div class="pscreen">
+          <div class="wrap" id="wrap">
+            <div class="ph">Add ./images/cookies-mobile.webp</div>
+            <img class="port" src="./images/cookies-mobile.webp" alt="Cookies website on a phone screen" onerror="this.previousElementSibling.textContent='Cannot load '+this.src;this.remove()">
+            <img class="land" src="./images/cookies-landscape.webp" alt="" aria-hidden="true" onload="this.parentNode.classList.add('ok')" onerror="this.remove()">
+          </div>
+        </div>
+        <div class="notch"></div>
+      </div>
+    </div>
+
+    <div class="cap" id="cap1">
+      <b>On desktop</b><span>Perfume website</span>
+      <a href="https://perfume-website-theta-sooty.vercel.app/" target="_blank" rel="noopener">Open live site</a>
+    </div>
+    <div class="cap" id="cap2">
+      <b>On mobile</b><span>Cookies website</span>
+      <a href="https://cookies-website-b8dm.vercel.app/" target="_blank" rel="noopener">Open live site</a>
+    </div>
+  </div>
+</section>
+
+<main>
+  <section class="sec" id="about">
+    <h2>About me</h2>
+    <p class="lead">I am a BSCS 5th semester student at Qarshi University. My goal is to enhance my professional skills, capabilities, and knowledge in an organization that recognizes the value of hard work and trusts me with responsibilities and challenges.</p>
+    <p class="meta">Jubilee Town, Lahore, Pakistan. BS Computer Science.</p>
+  </section>
+
+  <section class="sec">
+    <h2>Projects</h2>
+    <div class="grid">
+      <article class="card tilt"><h3>Retire Smart</h3><em>Your Pension, Our Priority</em><p>A software application with an intuitive UI that simplifies, automates, and streamlines pension tracking and financial disbursement for retirees.</p></article>
+      <article class="card tilt"><h3>Attendance Management System</h3><p>An interactive web/desktop UI application for educational environments to digitally log, maintain, and analyze student and employee attendance.</p></article>
+      <article class="card tilt"><h3>Secure File Transfer</h3><p>A hybrid cryptographic file transfer app using AES-256, RSA-2048, and SHA-256, with a user-friendly Gradio web interface.</p></article>
+      <article class="card tilt live"><h3>Perfume website</h3><p>Live on Vercel.</p><a href="https://perfume-website-theta-sooty.vercel.app/" target="_blank" rel="noopener">Visit site</a></article>
+      <article class="card tilt live"><h3>Cookies website</h3><p>Live on Vercel.</p><a href="https://cookies-website-b8dm.vercel.app/" target="_blank" rel="noopener">Visit site</a></article>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>Education</h2>
+    <ol class="line">
+      <li><span>2024 to 2028</span><h3>BS Computer Science</h3><p>Qarshi University. Currently in 5th semester: programming, algorithms, database systems, and modern software design.</p></li>
+      <li><span>2021 to 2023</span><h3>ICS, Intermediate in Computer Science</h3><p>Government College. Computer Science, Mathematics, and Physics.</p></li>
+      <li><span>2019 to 2021</span><h3>Matriculation</h3><p>Government School. Secondary education with science subjects.</p></li>
+    </ol>
+  </section>
+
+  <section class="sec">
+    <h2>Skills</h2>
+    <div class="grid two">
+      <div class="card"><h3>Programming</h3><div class="chips"><b>C++</b><b>Java</b></div><p>Algorithmic problem solving, data structures, pointers, and object-oriented design.</p></div>
+      <div class="card"><h3>Web development</h3><div class="chips"><b>HTML</b><b>CSS</b><b>JavaScript</b></div><p>Semantic HTML5, flexbox and grid layouts, and native JavaScript for responsive interaction.</p></div>
+      <div class="card"><h3>Databases</h3><div class="chips"><b>SQL</b></div><p>Relational schemas, table relationships, constraints, indexes, and structured queries.</p></div>
+      <div class="card"><h3>Tools and platforms</h3><div class="chips"><b>Git</b><b>GitHub</b><b>Vercel</b></div><p>Branch workflows on GitHub and live deployments on Vercel.</p></div>
+    </div>
+    <div class="grid two" style="margin-top:18px">
+      <div class="card"><h3>Languages</h3>
+        <div class="meter"><span>Urdu, native</span><i style="--w:100%"></i></div>
+        <div class="meter"><span>English, professional</span><i style="--w:80%"></i></div>
+      </div>
+      <div class="card"><h3>Interests</h3><div class="chips"><b>Reading books</b><b>Cooking</b><b>Music</b><b>Solving puzzles</b></div></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>Certifications</h2>
+    <ul class="certs">
+      <li>Foundations of Cybersecurity</li>
+      <li>Introduction to AI</li>
+      <li>Google AI and AI Essentials</li>
+      <li>Google Prompting Essentials</li>
+      <li>Certificate in Calligraphy</li>
+      <li>Diploma in Half-IT</li>
+    </ul>
+  </section>
+
+  <section class="sec contact" id="contact">
+    <h2>Contact me</h2>
+    <div class="cols">
+      <div>
+        <ul class="info">
+          <li><span>Email</span><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ridahassan.work@gmail.com" target="_blank" rel="noopener">ridahassan.work@gmail.com</a></li>
+          <li><span>University email</span><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=241-0054@qu.edu.pk" target="_blank" rel="noopener">241-0054@qu.edu.pk</a></li>
+          <li><span>Phone</span><a href="tel:+923288408052">0328 8408052</a></li>
+          <li><span>Location</span>Jubilee Town, Lahore, Pakistan</li>
+        </ul>
+        <form id="form" novalidate>
+          <label>Your name<input name="name" required autocomplete="name"></label>
+          <label>Your email<input name="email" type="email" required autocomplete="email"></label>
+          <label>Message<textarea name="msg" rows="4" required></textarea></label>
+          <button type="submit">Send message</button>
+          <p class="note" id="note" role="status"></p>
+        </form>
+      </div>
+      <div class="social">
+        <a class="tile tilt" href="https://github.com/RidaaHassan" target="_blank" rel="noopener" aria-label="GitHub profile">
+          <svg viewBox="0 0 16 16" width="34" height="34" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          <span>GitHub</span><small>RidaaHassan</small>
+        </a>
+        <a class="tile tilt" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ridahassan.work@gmail.com" target="_blank" rel="noopener" aria-label="Send an email">
+          <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          <span>Gmail</span><small>ridahassan.work</small>
+        </a>
+        <a class="tile tilt" href="tel:+923288408052" aria-label="Call Rida">
+          <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>Phone</span><small>0328 8408052</small>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>Rida Hassan, 2026</footer>
+<script src="script.js"></script>
+</body>
+</html>
