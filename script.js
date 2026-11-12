@@ -191,14 +191,15 @@
     if (!ok) { note.textContent = 'Please fill in your name, a valid email, and a message.'; return; }
     const d = new FormData(form);
     btn.disabled = true; note.textContent = 'Sending...';
-    // FormSubmit: no key needed. First message ever sent triggers an activation email to TO; click it once.
-    fetch('https://formsubmit.co/ajax/' + TO, {
+    // Web3Forms: get a free access key at web3forms.com (sent to your Gmail) and paste it here.
+    const KEY = 'PASTE_YOUR_WEB3FORMS_ACCESS_KEY_HERE';
+    fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
       body: JSON.stringify({
-        _subject: 'CV website message from ' + d.get('name'),
-        _captcha: 'false',
-        _template: 'table',
+        access_key: KEY,
+        subject: 'CV website message from ' + d.get('name'),
+        from_name: d.get('name'),
         name: d.get('name'),
         email: d.get('email'),
         message: d.get('msg')
@@ -206,7 +207,7 @@
     })
       .then(r => r.json())
       .then(res => {
-        if (String(res.success) !== 'true') throw new Error(res.message || 'failed');
+        if (!res.success) throw new Error(res.message || 'failed');
         note.textContent = 'Message sent. Thank you, I will reply soon.';
         form.reset();
       })
