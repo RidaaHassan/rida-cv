@@ -1,57 +1,90 @@
-# Rida Hassan | Portfolio
+<div align="center">
 
-A personal portfolio website for **Rida Hassan**, a BSCS student at Qarshi University, Lahore. It showcases projects, education, skills, certifications and a working contact form.
+# Rida Hassan
 
-## Live projects shown on the site
+### BSCS Student · Web Developer · Qarshi University, Lahore
 
-- Perfume website: https://perfume-website-theta-sooty.vercel.app/
-- Cookies website: https://cookies-website-b8dm.vercel.app/
+An animated, scroll-driven portfolio built with plain HTML, CSS and JavaScript.
 
-## Features
+[Perfume Website](https://perfume-website-theta-sooty.vercel.app/) · [Cookies Website](https://cookies-website-b8dm.vercel.app/) · [GitHub](https://github.com/RidaaHassan)
 
-- Scroll-driven 3D intro: a laptop and a phone fly in, zoom to full screen and show the live projects
-- Dark and light theme toggle (remembers your choice)
-- Custom heart cursor with sparkle trail
-- Animated sections: About, Projects, Education, Skills, Certifications and Contact
-- Contact form that delivers messages straight to my Gmail inbox
-- Fully responsive and respects the reduced-motion setting
+</div>
 
-## Built with
+---
 
-HTML, CSS and vanilla JavaScript. No frameworks. Fonts: Syne and Manrope from Google Fonts. Hosted on Vercel.
+## About
+
+I am a BSCS 5th semester student at Qarshi University, Lahore. I enjoy building clean, responsive websites and solving problems with code. This portfolio presents my projects, education, skills and certifications, and I am open to tech roles and collaboration.
+
+## Preview
+
+| Desktop project | Mobile project |
+| :---: | :---: |
+| <img src="./perfume-desktop.webp" alt="Perfume website on desktop" width="480"> | <img src="./cookies-mobile.webp" alt="Cookies website on mobile" width="160"> |
+| **Perfume website** | **Cookies website** |
+
+## Highlights
+
+- **3D scroll story:** a laptop and a phone fly in, zoom to full screen and show my live projects as you scroll
+- **Dark and light themes:** one click to switch, and your choice is remembered
+- **Playful details:** custom heart cursor, sparkle trail, tilting cards and animated skill meters
+- **Working contact form:** messages arrive directly in my inbox
+- **Responsive and accessible:** works on phones and desktops, supports keyboard focus and reduced motion
+
+## Projects
+
+| Project | Description |
+| --- | --- |
+| **Retire Smart** | Pension tracking and disbursement app with a simple, intuitive UI |
+| **Attendance Management System** | Web and desktop app to log, maintain and analyze attendance |
+| **Secure File Transfer** | Hybrid encryption (AES-256, RSA-2048, SHA-256) with a Gradio web interface |
+| **Perfume website** | Live on Vercel |
+| **Cookies website** | Live on Vercel |
+
+## Skills
+
+| Area | Tools |
+| --- | --- |
+| Programming | C++, Java |
+| Web development | HTML, CSS, JavaScript |
+| Databases | SQL |
+| Tools and platforms | Git, GitHub, Vercel |
+
+## Tech used
+
+HTML5, CSS3 and vanilla JavaScript with no frameworks or libraries. Fonts are Syne and Manrope from Google Fonts. The site is deployed on Vercel.
 
 ## Project structure
 
 ```
-index.html                 Page structure and content
-style.css                  Styling, themes and animations
-script.js                  Scroll scenes, cursor, theme and contact form
-perfume-desktop.webp       Desktop screenshot (laptop scene)
-cookies-mobile.webp        Phone screenshot (portrait)
-cookies-landscape.webp     Phone screenshot (landscape)
-rida.jpg                   Optional portrait photo (falls back to an avatar)
+├── index.html               Page content
+├── style.css                Layout, themes and animations
+├── script.js                Scroll scenes, cursor, theme and contact form
+├── perfume-desktop.webp     Desktop screenshot
+├── cookies-mobile.webp      Phone screenshot (portrait)
+├── cookies-landscape.webp   Phone screenshot (landscape)
+└── rida.jpg                 Portrait photo (optional)
 ```
 
 ## Run locally
 
-1. Download or clone the repository.
-2. Open `index.html` in a browser, or serve the folder with any static server.
+```bash
+git clone https://github.com/RidaaHassan/<repository-name>.git
+cd <repository-name>
+```
 
-## Contact form setup
-
-The form uses [Web3Forms](https://web3forms.com).
-
-1. Create a free access key with your email at web3forms.com.
-2. In `script.js`, replace `PASTE_YOUR_WEB3FORMS_ACCESS_KEY_HERE` with your key.
-3. Deploy. Messages sent through the form arrive in your inbox.
-
-If sending fails, the form shows a link to send the message through Gmail instead.
+Then open `index.html` in your browser.
 
 ## Contact
 
-- Email: ridahassan.work@gmail.com
-- GitHub: [RidaaHassan](https://github.com/RidaaHassan)
-- Location: Jubilee Town, Lahore, Pakistan
+- **Email:** ridahassan.work@gmail.com
+- **GitHub:** [RidaaHassan](https://github.com/RidaaHassan)
+- **Location:** Jubilee Town, Lahore, Pakistan
 
-&copy; 2026 Rida Hassan
+---
 
+<div align="center">
+
+Made by Rida Hassan, 2026
+
+</div>
